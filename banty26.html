@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Visibility&z-index</title>
+    <style>
+        .box{
+              width: 170px;
+              height: 170px;
+              border: 2px solid rebeccapurple;
+            }
+
+            #box-1{
+                background-color: rgb(231, 240, 102);
+                position: relative;
+                top: 50px;
+                z-index: -40;
+                background-color: rgb(119, 28, 96);
+                
+            }
+            #box-2{
+                background-color: rgb(37, 170, 20);
+                /* visibility: hidden; */
+                /* display: none; */
+                position: relative;
+                top: 18px;
+                z-index: -180;
+                background-color: blueviolet;
+
+            }
+            #box-3{
+                background-color: rgb(46, 34, 110);
+
+            }
+            #box-4{
+                background-color: rgb(31, 15, 6);
+
+            }
+    </style>
+    
+
+</head>
+<body>
+    <div class="box" id="box-1"></div>
+    <div class="box" id="box-2"></div>
+    <div class="box" id="box-3"></div>
+    <div class="box" id="box-4"></div>
+</body>
+</html>
