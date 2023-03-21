@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox</title>
+    <style>
+        .container{
+            height: 550px;
+            width: 120%;
+            border: 2px solid yellowgreen;
+            display: flex;
+            /* flex-direction: column; */
+            /* flex-direction: row-reverse; */
+            /* flex-direction: column-reverse; */
+            flex-direction: row;
+
+            /* flex-wrap: wrap; */
+            /* flex-wrap: wrap-reverse; */
+
+            /* justify-content: center; */
+            /* justify-content: space-between; */
+            /* justify-content: space-evenly;
+            justify-content: space-around; */
+
+            /* align-items: center;
+            align-items: flex-end;
+            align-items: flex-start;
+            align-items: stretch; */
+
+        }
+        .item{
+            background-color: rgb(175, 67, 12);
+            border: 2px solid rgb(79, 0, 128);
+            margin: 14px;
+            padding: 6px;
+            height: 200px;
+            width: 250px;
+
+        }
+        #item1{
+            order: 5;
+           flex-grow: 5;
+           flex-shrink: 7;
+           
+        }
+        #item2{
+            /* order: 8; */
+            /* flex-grow: 8;
+            flex-shrink: 6; */
+            flex-basis: 350px;
+
+        }
+        #item3{
+            /* order: 6; */
+            /* align-self: flex-start */
+
+        }
+    </style>
+</head>
+<body>
+    <h1>This is flexbox</h1>
+    <div class="container">
+        <div class="item" id="item1">first</div>
+        <div class="item" id="item2">second</div>
+        <div class="item" id="item3">third</div>
+        <div class="item" id="item4">fourth</div>
+        <div class="item" id="item5">fifth</div>
+        <div class="item" id="item6">sixth</div>
+    </div>
+</body>
+</html>
