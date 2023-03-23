@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media Queries</title>
+    <style>
+        .square{
+            font-size: 60px;
+            background-color: yellowgreen;
+            color: blue;
+            text-align: center;
+            display: none;
+        }
+
+        @media (max-width:300px) {
+           #square1{
+                display: block;
+                background-color: aquamarine;
+            }
+        }
+        @media (min-width:300px) and (max-width:500px) {
+           #square2{
+                display: block;
+                background-color: rgb(36, 177, 69);
+            }
+        }
+        @media (min-width:500px) and (max-width:800px) {
+           #square3{
+                display: block;
+                background-color: rgb(158, 168, 19);
+            }
+        }
+        @media (min-width:800px) {
+           #square4{
+                display: block;
+                background-color: rgb(85, 29, 181);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="square" id="square1">HP</div>
+    <div class="square" id="square2">DELL</div>
+    <div class="square" id="square3">LENOVO</div>
+    <div class="square" id="square4">ASUS</div>
+</body>
+</html>
