@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box shadow & text shadow</title>
+    <style>
+        .container{
+            display: flex;
+        }
+
+        .shadow{
+            margin: 22px 10px;
+            padding: 22px 10px;
+            /* border: 2px solid violet; */
+            background-color: aquamarine;
+             /* box-shadow: 10px 13px green; */
+            /* box-shadow: -10px -13px green; */
+            /* box-shadow: 7px 5px 10px green; */
+            /* box-shadow: -7px -5px -10px green; */
+            /* box-shadow: -7px -5px -10px -34px green; */
+            /* box-shadow: -7px -5px -10px -34px rgb(71, 172, 172, 0.5) ; */
+               /* box-shadow: inset 3px 5px green; */
+        }
+        .shadow h2{
+            
+            text-shadow: 3px 4px rgb(166, 204, 117);
+            text-shadow: 3px 4px 2px rgb(173, 17, 17);
+
+
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="shadow" id="shadow1">
+            <h2>this is css</h2>
+            <p> And i had completed this course Lorem ipsum dolor, sit amet consectetur adipisicing elit. Asperiores natus ullam quia iusto, perspiciatis praesentium ducimus quisquam obcaecati unde magni earum autem cupiditate eos esse tenetur harum minus quo libero? Adipisci suscipit sit hic facere commodi voluptatibus neque iure omnis!</p>
+        </div>
+        <div class="shadow" id="shadow2">
+            <h2>shadow2</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia, ipsa, reiciendis rerum perferendis facilis tenetur laborum nam recusandae consectetur accusamus laboriosam aut tempora! Necessitatibus quis eveniet reiciendis. Facilis, blanditiis tempora, vero asperiores voluptate ipsum expedita rem atque voluptas doloribus tempore.</p>
+        </div>
+        <div class="shadow" id="shadow3">
+             <h2>shadow3</h2>
+             <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolore, ut doloremque soluta, odit itaque maiores quo facilis illum suscipit autem repudiandae cumque, adipisci ratione beatae impedit minima libero obcaecati fugiat rem. Aliquid nostrum, fugit ipsa minus quidem atque perferendis exercitationem!</p>
+        </div>
+        
+    </div>
+</body>
+</html>
