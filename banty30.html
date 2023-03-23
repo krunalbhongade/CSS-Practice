@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>More on Selectors</title>
+    <style>
+        h1{
+          background-color: azure;
+          color: black;
+          font-weight: bold;
+          text-align: center;
+        }
+        /* div p{
+            color: yellow;
+            font-weight: bold;
+            background-color: darkgreen ;
+        } */
+        /* div li p{
+            color: rgb(61, 25, 161);
+            font-weight: bold;
+            background-color: rgb(195, 176, 13);
+        }
+        div > p{
+            color: rgb(129, 98, 214);
+            font-weight: bold;
+            background-color: rgb(186, 67, 40);
+        } */ 
+        div + p{
+            color: white;
+            background-color: rgb(130, 84, 14);
+        }
+    </style>
+</head>
+<body>
+    <h1>This is more on selectors</h1>
+    <div class="container">
+        <div class="row">
+            <ul>
+                <li class="item"><p>This is another paragraph inside li</p></li>
+            </ul>
+            <p>This ia para</p>
+        </div>
+        <p>This is another para</p>
+    </div>
+    <p>This is outer most para</p>
+</body>
+</html>
