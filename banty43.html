@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Grid</title>
+    <style>
+        .container{
+            display: grid;
+            grid-gap: 1rem;
+            grid-template-areas: 
+            'navbar navbar navbar navbar'
+            'section section section aside'
+            'footer footer footer footer';
+        }
+        .item{
+            background-color: blueviolet;
+            border: 3px solid navajowhite;
+            padding: 18px 30px;
+        }
+        #navbar{
+            grid-area: navbar;
+        }
+        #section{
+            grid-area: section;
+        }
+        #aside{
+            grid-area: aside;
+        }
+        footer{
+            grid-area: footer;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div id="navbar" class="item">
+            Home About Services Contact us
+        </div>
+        <div id="section" class="item">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto pariatur quam, nam voluptatibus numquam accusamus dicta animi qui soluta eos quis obcaecati doloremque ducimus excepturi, eaque voluptates ab magni cumque temporibus. Distinctio architecto, dicta voluptatum impedit esse deleniti temporibus assumenda repudiandae commodi. Animi nulla quaerat alias, ipsa fugit harum dicta et esse, numquam cupiditate sunt, temporibus quasi cumque sit repellat porro non obcaecati iste voluptatem. Voluptates, placeat dolore blanditiis, magni sit alias amet provident quasi, fugit voluptatem nemo neque? Nisi, sed. Placeat eaque enim qui aperiam quod tenetur possimus accusantium nostrum ipsum ipsam inventore adipisci ex voluptate expedita unde excepturi minima doloribus alias eius, doloremque est libero exercitationem illo similique. Animi minus totam inventore eius quas sapiente est veniam ad quaerat cumque. Accusantium voluptates esse porro ipsam similique cum? Animi optio vero, illum dolorum eveniet illo recusandae nihil. At rerum saepe aliquam sit veritatis earum iste nobis magni asperiores molestias.
+        </div>
+        <div id="aside" class="item">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius adipisci, officia delectus fugit dignissimos vel id, soluta odit ea quo quam quae voluptate itaque harum! Reiciendis magnam, eum quam ipsum totam deserunt aliquid iusto reprehenderit! Error explicabo debitis modi numquam minus laudantium quo ab rem dolor, iusto obcaecati beatae blanditiis odit, harum rerum consequuntur possimus facilis eveniet iure optio! Sapiente soluta asperiores iusto sint, labore iure doloremque incidunt? Temporibus, quasi. Impedit numquam eius voluptatem minus, cumque sequi eveniet officiis rem blanditiis deleniti iure ut dicta quibusdam neque molestias aspernatur magnam dolorem sint! Unde corrupti deserunt atque distinctio adipisci quis error!
+        </div>
+        <footer class="item">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod corrupti a perferendis asperiores aliquid eveniet commodi vel autem dolorem? Beatae accusantium nemo obcaecati autem expedita debitis, vero pariatur repellat modi nisi sequi, recusandae ipsum perspiciatis ut. Quasi molestiae dolor delectus suscipit, quod, quis sunt necessitatibus nobis voluptas, similique illo a.
+        </footer>
+        <!-- <div class="item">Item-1</div>
+        <div class="item">Item-2</div>
+        <div class="item">Item-3</div>
+        <div class="item">Item-4</div>
+        <div class="item">Item-5</div>
+        <div class="item">Item-6</div>
+        <div class="item">Item-7</div>
+        <div class="item">Item-8</div>
+        <div class="item">Item-9</div>
+        <div class="item">Item-10</div>
+        <div class="item">Item-11</div>
+        <div class="item">Item-12</div>
+        <div class="item">Item-13</div>
+        <div class="item">Item-14</div> -->
+    </div>
+</body>
+</html>
